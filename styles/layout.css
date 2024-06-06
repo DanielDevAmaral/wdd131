@@ -1,0 +1,37 @@
+
+.header-content{
+    height: 144px;
+    background-color: grey;
+}
+
+.menu{
+    background-color: black;
+    display: grid;
+    padding: 16px;
+    text-align-last: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+a{
+    color: white;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 164px;
+}
+
+.main-container{
+    background-color: lightgray;
+}
+
+.main-aside{
+    background-color: white;
+}
+
+footer{
+    background-color: grey;
+    height: 144px;
+}
