@@ -33,6 +33,11 @@
 
     }
 
+    nav a:hover{
+        color: #390364;
+        background-color: white;
+    }
+
     main{
         padding: 36px;
     }
