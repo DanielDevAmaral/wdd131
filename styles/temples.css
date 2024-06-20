@@ -55,10 +55,10 @@ nav.show a:hover{
     color: #390364;
 }
 
-main h1{
+.main-title{
     padding-top: 16px;
-    text-align: center;
-    font-size: 34px;
+    text-align: -webkit-center;
+    font-size: 24px;
     color: #390364;
 }
 
