@@ -1,3 +1,8 @@
+:root {
+    --main-color: #CD4F00;
+    --second-color: #005430;
+  }
+
 *{
     margin: 0 auto;
     font-family: "Poppins", sans-serif;
@@ -5,7 +10,7 @@
 
 header{
     padding: 24px;
-    background-color: #CD4F00;
+    background-color: var(--main-color);
     color: white;
     text-align: center;
 }
@@ -26,7 +31,7 @@ main{
 }
 
 .data-title{
-    background-color: #005430;
+    background-color: var(--second-color);
     color: #fff;
 }
 
@@ -35,7 +40,7 @@ main{
 }
 
 .weather-title{
-    background-color: #005430;
+    background-color: var(--second-color);
     color: #fff;
 }
 
@@ -45,7 +50,7 @@ main{
 
 footer{
     padding: 10px;
-    background-color: #005430;
+    background-color: var(--second-color);
     color: white;
     text-align: center;
 }
