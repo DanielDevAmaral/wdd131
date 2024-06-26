@@ -12,7 +12,7 @@
     <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/place.css" />
     <link rel="stylesheet" href="styles/place-larger.css" />
-    <title>WDD 131 - Temples Album - Amaral, Daniel</title>
+    <title>WDD 131 - Ireland - Amaral, Daniel</title>
   </head>
   <body>
     <header>
@@ -21,30 +21,30 @@
     <main>
         <picture>
             <source srcset="images/ireland-large.webp" media="(min-width: 740px)">
-            <img src="images/ireland-small.webp" alt="Orem Utah Temple">
+            <img src="images/ireland-small.webp" alt="Ireland">
         </picture>
         <div class="data-container">
             <h2 class="data-title">Data</h2>
-            <ol class="data-labels">
-                <p class="data-label">Area: <span></span></p>
-                <p class="data-label">Population: <span></span></p>
-                <p class="data-label">Capital: <span></span></p>
-                <p class="data-label">Languages: <span></span></p>
-                <p class="data-label">Currency: <span></span></p>
-                <p class="data-label">Time Zone: <span></span></p>
-                <p class="data-label">Calling Code: <span></span></p>
-                <p class="data-label">Internet TLD: <span></span></p>
-            </ol>
+            <div class="data-labels">
+                <p class="data-label"><strong>Area:</strong> <span>84,421 square kilometers (32,595 square miles)</span></p>
+                <p class="data-label"><strong>Population:</strong> <span>4.9 million people (as of 2022)</span></p>
+                <p class="data-label"><strong>Capital:</strong> <span>Dublin</span></p>
+                <p class="data-label"><strong>Languages:</strong> <span>Irish (Gaeilge) and English</span></p>
+                <p class="data-label"><strong>Currency:</strong> <span>Euro (€) (EUR)</span></p>
+                <p class="data-label"><strong>Time Zone:</strong> <span>GMT and Irish Standard Time (IST)</span></p>
+                <p class="data-label"><strong>Calling Code:</strong> <span>+353</span></p>
+                <p class="data-label"><strong>Internet TLD:</strong> <span>.ie</span></p>
+            </div>
         </div>
         <div class="weather-container">
             <h2 class="weather-title">Weather</h2>
             <img src="images/weather-icon.svg" alt="" class="weather-icon">
-            <ol class="weather-labels">
-                <p class="weather-label">Temperature: <span></span></p>
-                <p class="weather-label">Conditions <span></span></p>
-                <p class="weather-label">Wind: <span></span></p>
+            <div class="weather-labels">
+                <p class="weather-label"><strong>Temperature:</strong> <span id="temp">23</span>°C</p>
+                <p class="weather-label"><strong>Conditions:</strong> <span>Cloudy</span></p>
+                <p class="weather-label"><strong>Wind:</strong> <span id="wind">14</span> km/h</p>
                 <p class="weather-label-windchill"></p>
-            </ol>
+            </div>
         </div>
     </main>
     <footer>

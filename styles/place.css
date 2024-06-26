@@ -6,19 +6,48 @@
 }
 
 header{
-    padding: 32px;
-    background-color: #FF7900;
+    padding: 24px;
+    background-color: #CD4F00;
     color: white;
     text-align: center;
 }
 
+picture img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
 main{
     margin-top: 14px;
+    text-align: center;
+}
+
+.data-container{
+    padding: 20px;
+}
+
+.data-title{
+    background-color: #005430;
+    color: #fff;
+}
+
+.weather-container{
+    padding: 20px;
+}
+
+.weather-title{
+    background-color: #005430;
+    color: #fff;
+}
+
+.weather-icon{
+    width: 90px;
 }
 
 footer{
     padding: 10px;
-    background-color: #009A49;
+    background-color: #005430;
     color: white;
     text-align: center;
 }
