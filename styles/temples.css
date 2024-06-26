@@ -63,18 +63,15 @@ nav.show a:hover{
 }
 
 .temples-grid{
-    display: block;
-    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    text-align: center;
 }
 
 .temple-image img{
-    padding: 16px;
     width: 90%;
     border-radius: 26px;
-}
-
-figcaption{
-    text-align: center;
 }
 
 footer{
