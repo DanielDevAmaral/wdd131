@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="description"
+      content="WDD 131 - Temples Album - Daniel Leite Amaral - Home page"
+    />
+    <meta name="author" content="Daniel Amaral" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-larger.css" />
+    <title>WDD 131 - Temples Album - Amaral, Daniel</title>
+  </head>
+  <body>
+    <header>
+        <h1 class="title">Ireland</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/ireland-large.webp" media="(min-width: 740px)">
+            <img src="images/ireland-small.webp" alt="Orem Utah Temple">
+        </picture>
+        <div class="data-container">
+            <h2 class="data-title">Data</h2>
+            <ol class="data-labels">
+                <p class="data-label">Area: <span></span></p>
+                <p class="data-label">Population: <span></span></p>
+                <p class="data-label">Capital: <span></span></p>
+                <p class="data-label">Languages: <span></span></p>
+                <p class="data-label">Currency: <span></span></p>
+                <p class="data-label">Time Zone: <span></span></p>
+                <p class="data-label">Calling Code: <span></span></p>
+                <p class="data-label">Internet TLD: <span></span></p>
+            </ol>
+        </div>
+        <div class="weather-container">
+            <h2 class="weather-title">Weather</h2>
+            <img src="images/weather-icon.svg" alt="" class="weather-icon">
+            <ol class="weather-labels">
+                <p class="weather-label">Temperature: <span></span></p>
+                <p class="weather-label">Conditions <span></span></p>
+                <p class="weather-label">Wind: <span></span></p>
+                <p class="weather-label-windchill"></p>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Daniel Amaral | Brazil</p>
+        <p id="lastModified"></p>
+      </footer>
+  </body>
+</html>

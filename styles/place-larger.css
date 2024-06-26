@@ -1,0 +1,40 @@
+@media screen and (min-width: 740px){
+    
+    picture{
+        overflow: hidden;
+    }
+    
+    picture img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+
+    }
+
+    .data-container{
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        padding: 30px;
+
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .data-title{
+        position: absolute;
+        color: white;
+        top: -40px;
+        padding: 10px;
+        padding-right: 200px;
+        background-color: rgba(0, 154, 73, 0.7);
+    }
+
+    .weather-container{
+        position: absolute;
+        right: 30px;
+        top: 280px;
+        padding: 30px;
+
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
