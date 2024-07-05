@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0 auto;
@@ -60,6 +59,8 @@ nav.show a:hover{
     text-align: -webkit-center;
     font-size: 24px;
     color: #390364;
+    padding-bottom: 16px;
+    margin: 16px;
 }
 
 .temples-grid{
@@ -69,9 +70,21 @@ nav.show a:hover{
     text-align: center;
 }
 
-.temple-image img{
+section{
+    padding-bottom: 16px;
+}
+
+section h2{
+    color: #390364;
+}
+
+section img{
+    border-radius: 16px;
     width: 90%;
-    border-radius: 26px;
+}
+
+.label{
+    font-weight: bolder;
 }
 
 footer{
