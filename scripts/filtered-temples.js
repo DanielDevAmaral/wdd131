@@ -88,7 +88,10 @@ hambutton.addEventListener('click', () => {
 	hambutton.classList.toggle('show');
 });
 
+callTemples(temples);
+
 function callTemples(filter) {
+	document.querySelector(".temples-grid").innerHTML = "";
 	filter.forEach(temple => {
 		const card = document.createElement("section");
 		const name = document.createElement("h2")
@@ -121,16 +124,14 @@ const old = document.querySelector(".old");
 const newt = document.querySelector(".new");
 const large = document.querySelector(".large");
 const small = document.querySelector(".small");
+const home = document.querySelector(".home");
 
 old.addEventListener('click', () => {
-	temples.dedicated.split(",");
-	
-	callTemples(temples.filter(temple => temple.dedicated[0] < 1900));
+	callTemples(temples.filter(temple => temple.dedicated.split(',')[0] < 1900));
 })
 
 newt.addEventListener('click', () => {
-	temples.dedicated.split(",");
-	callTemples(temples.filter(temple => temple.dedicated[0] > 2000));
+	callTemples(temples.filter(temple => temple.dedicated.split(',')[0] > 2000));
 })
 
 large.addEventListener('click', () => {
@@ -140,3 +141,9 @@ large.addEventListener('click', () => {
 small.addEventListener('click', () => {
 	callTemples(temples.filter(temple => temple.area < 10000 ));
 })
+home.addEventListener('click', () => {
+	callTemples(temples);
+})
+
+
+
