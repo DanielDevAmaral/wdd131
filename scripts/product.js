@@ -39,14 +39,14 @@ const products = [
 
 console.log('Start');
 
+const span = document.querySelector("#count")
+
 var n = localStorage.getItem('counter');
 if (n === null) {
     n = 0;
 } else {
     n++;
 }
-console.log(n);
-localStorage.setItem("counter", n);
 
-console.log('End');
+localStorage.setItem("counter", n);
 
