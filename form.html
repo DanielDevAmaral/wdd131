@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Daniel Leite Amaral - Home page"
+    />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/product.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/form.css" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Amaral, Daniel</title>
+  </head>
+  <body>
+    <main>
+      <h1>Product Review</h1>
+
+      <form action="review.html" method="get">
+        <fieldset>
+          <div class="product-select">
+            <label for="product-select" class="label-title">Product Name</label>
+            <select name="product" id="product-select" required>
+              <option value="placeholder" disabled selected>
+                Select a Product ...
+              </option>
+            </select>
+          </div>
+
+          <div class="overall">
+            <label for="rating" class="label-title">Overall Rating</label>
+            <div class="rating">
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1">&star;</label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2">&star; &star;</label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3">&star; &star; &star;</label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4">&star; &star; &star; &star;</label>
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5">&star; &star; &star; &star; &star;</label>
+            </div>
+          </div>
+
+          <div class="date">
+            <label for="date" class="label-title">Date of Installation</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="features">
+            <label for="check" class="label-title"
+              >Which features did you find useful in the product?
+              <span id="check">(check all that applay)</span>
+            </label>
+            <div class="check">
+              <input
+                type="checkbox"
+                id="durability"
+                name="durability"
+                value="1"
+              />
+              <label for="durability">Durability</label>
+              <input type="checkbox" id="use" name="use" value="2" />
+              <label for="use">Ease of Use</label>
+              <input
+                type="checkbox"
+                id="performance"
+                name="performance"
+                value="3"
+              />
+              <label for="performance">Performance</label>
+              <input type="checkbox" id="design" name="design" value="4" />
+              <label for="design">Design</label>
+            </div>
+          </div>
+
+          <div class="review">
+            <label for="review" class="label-title"
+              >Written Review <span id="optional">(Optional)</span></label
+            >
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+          </div>
+
+          <div class="name">
+            <label for="text-name" class="label-title"
+              >Tour Name <span id="optional">(Optional)</span></label
+            >
+            <input type="text" name="text-name" id="text-name" />
+          </div>
+
+          <input type="submit" value="Post Review" id="submit" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p><span id="currentyear"></span> | Daniel Amaral | Brazil</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

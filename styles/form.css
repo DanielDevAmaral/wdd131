@@ -1,0 +1,82 @@
+*{
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    color: #fff;
+    background-color: #390364;
+    padding: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+}
+
+.label-title{
+    font-weight: bold;
+    color: #390364;
+    margin-top: 20px;
+}
+
+.product-select{
+    display: block;
+}
+
+.product-select select{
+    width: 100%;
+}
+
+.rating{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#star1,#star2,#star3,#star4,#star5{
+    grid-row: 2;
+}
+
+.date input{
+    display: block;
+    width: 100%;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+.name input{
+    display: block;
+    width: 100%;
+}
+
+#submit{
+    width: 100%;
+    display: block;
+}
+
+/* add spaces between */
+
+.overall, .date, .features, .review, .name, #submit {
+    margin-top: 16px;
+}
+
+#optional{
+    font-size: 10px;
+    color: #390364;
+}
+
+footer{
+    padding: 10px;
+    background-color: #390364;
+    color: white;
+    text-align: center;
+}
+
+#lastModified{
+    color: #FDFE4C;
+    font-size: 12px;
+}
