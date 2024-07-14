@@ -37,3 +37,16 @@ const products = [
 
   select.innerHTML = options;
 
+console.log('Start');
+
+var n = localStorage.getItem('counter');
+if (n === null) {
+    n = 0;
+} else {
+    n++;
+}
+console.log(n);
+localStorage.setItem("counter", n);
+
+console.log('End');
+
