@@ -1,0 +1,29 @@
+*{
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+  
+  .heading {
+    background-color: #264653;
+    color: white;
+    display: inline-block;
+  }
+  
+  #colorone{
+      color:#264653 ;
+      font-weight: 700;
+  }
+  
+  #colortwo{
+      color: #2A9D8F;
+      font-weight: 700;
+  }
+  
+  #colorthree{
+      color: #E9C46A;
+      font-weight: 700;
+  }
+  
+  #wireframe > p, a{
+      background-color: #E9C46A;
+  }
