@@ -4,26 +4,27 @@
 }
   
   .heading {
-    background-color: #264653;
-    color: white;
-    display: inline-block;
+    color: #000;
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 5px;
   }
   
   #colorone{
-      color:#264653 ;
+      color:#000 ;
       font-weight: 700;
   }
   
   #colortwo{
-      color: #2A9D8F;
+      color: #D93239;
       font-weight: 700;
   }
   
   #colorthree{
-      color: #E9C46A;
+      color: #7AC943;
       font-weight: 700;
   }
   
   #wireframe > p, a{
-      background-color: #E9C46A;
+      background-color: #7AC943;
   }
