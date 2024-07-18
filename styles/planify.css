@@ -9,7 +9,7 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
 }
 
 .sidebar{
@@ -44,7 +44,10 @@ nav a{
     width: 90%;
     border-radius: 38px;
     border: none;
+}
 
+.input-container input:focus{
+    border: 2px solid #000 ;
 }
 
 [type=text]{
@@ -64,7 +67,70 @@ nav a{
     align-self: center;
 }
 
-.todo-itens{
-    height: 100vh;
+.button-add{
+    border: none;
+}
+
+.tasks-container, .tasks-container-complete, .contend{
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.task{
+    margin: 20px;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 32px;
+    height: auto;
+    align-content: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    word-wrap: break-word;
+}
+
+.task-time{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.divtask .task:hover{
+    background-color: #7AC943;
+    color: #fff;
+    transition: 1200ms;
+}
+
+.divtask .complete-task:hover{
+    background-color: #D93239;
+    color: #fff;
+    transition: 1200ms;
+}
+
+.image-container{
+    text-align-last: center;
+}
+
+.image-container img{
+    border-radius: 100%;
+    border: 4px solid #000;
+    margin: 30px;
+}
+
+.paragraph-container{
+    width: 80%;
+    margin: auto;
+}
+
+.paragraph-container p{
+    text-align: justify;
+}
+
+span{
+    font-weight: bolder;
 }
 
