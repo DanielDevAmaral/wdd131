@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function GetList(arrayName) {
     return JSON.parse(localStorage.getItem(arrayName));
   }
-  if (path === "/planify.html") {
+  if (path === "/wdd131/planify.html") {
     button.addEventListener("click", (event) => {
       let task = document.querySelector("#task").value;
       if (String(task).length == 0) {
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // Adicionar tarefas salvas ao carregar a página
 
-  if (path === "/planify-complete.html") {
+  if (path === "/wdd131/planify-complete.html") {
     if (completeTasks.length > 0) {
       completeTasks.forEach((task) => {
         const divTask = document.createElement("div");
