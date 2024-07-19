@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".button-add");
   const div = document.querySelector(".tasks-container");
   const completeContainer = document.querySelector(".tasks-container-complete");
+  const hamburguer = document.querySelector('.hamburger');
+  const sidebar = document.querySelector('.sidebar');
   const now = new Date();
   let day = now.getDay();
   let hours = now.getHours();
@@ -32,6 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
   function SaveList(arrayName, array) {
     localStorage.setItem(arrayName, JSON.stringify(array));
   }
+
+  hamburguer.addEventListener("click", () => {
+    if (sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        sidebar.classList.add('close');
+        hamburguer.textContent = '☰';
+        hamburguer.style.color = "black";
+    } else {
+        sidebar.classList.remove('close');
+        sidebar.classList.add('open');
+        hamburguer.textContent = '✖';
+        hamburguer.style.color = "white";
+    }
+});
 
   function GetList(arrayName) {
     return JSON.parse(localStorage.getItem(arrayName));

@@ -9,72 +9,81 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 .sidebar{
-    background-color: #fff;
-    border-end-start-radius: 36px;
-    border-end-end-radius: 36px;
-}
-
-nav{
-    padding-top: 36px;
-}
-
-nav a{
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    display: block;
-    text-align: center;
-    padding: 8px;
-}
-
-
-.choose{
+    grid-row: 1;
+    text-align-last: center;
     background-color: black;
-    color: white;
-    border-radius: 38px;
-    width: 85%;
-    margin-inline: auto;
+    align-content: center;
 }
 
-.input-container input{
-    width: 90%;
-    border-radius: 38px;
+.sidebar a{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.sidebar a:hover{
+background-color: #c5c5c5;
+color: black;
+}
+
+.close{
+    display: none;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
     border: none;
-}
-
-.input-container input:focus{
-    border: 2px solid #000 ;
-}
-
-[type=text]{
-    padding: 1em 16px 1em 1em;
-}
+    width: 30px;
+    background: none;
+    cursor: pointer;
+    font-weight: bolder;
+  }
 
 .input-container{
-    display: flex;
-    grid-column: 2;
-    align-content: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.input-container a{
-    display: flex;
-    align-self: center;
-}
-
-.button-add{
-    border: none;
+    grid-row: 3;
 }
 
 .tasks-container, .tasks-container-complete, .contend{
     height: 90vh;
+    grid-row: 2;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+#task{
+    width: 70%;
+    margin: 5px;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 32px;
+    height: auto;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    word-wrap: break-word;
+    border: 1px solid black;
+}
+
+.button-add{
+    border: none;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.input-container{
+    text-align: -webkit-center;
 }
 
 .task{
@@ -84,8 +93,8 @@ nav a{
     border-radius: 32px;
     height: auto;
     align-content: center;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     word-wrap: break-word;
@@ -133,4 +142,15 @@ nav a{
 span{
     font-weight: bolder;
 }
+
+footer{
+    grid-row: 3;
+    text-align-last: center;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+
 

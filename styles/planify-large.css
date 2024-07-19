@@ -1,0 +1,157 @@
+@media screen and (min-width: 600px){ 
+    
+    main{
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: none;
+    }
+    
+    .sidebar{
+        grid-column: 1;
+        grid-row: 1;
+        background-color: #fff;
+        border-end-start-radius: 36px;
+        border-end-end-radius: 36px;
+        align-content: start;
+    }
+
+    nav{
+        padding-top: 36px;
+    }
+    
+    .sidebar a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        display: block;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .sidebar a:hover{
+        background-color: white;
+        color: black;
+        }
+
+    #choose{
+        background-color: black;
+        color: white;
+        border-radius: 38px;
+        width: 85%;
+        margin-inline: auto;
+    }
+
+    .close{
+        display: block;
+    }
+
+    .hamburger{
+        display: none;
+    }
+    
+
+    .input-container input{
+        width: 90%;
+        border-radius: 38px;
+        border: none;
+    }
+    
+    .input-container input:focus{
+        border: 2px solid #000 ;
+    }
+    
+    [type=text]{
+        padding: 1em 16px 1em 1em;
+    }
+    
+    .input-container{
+        display: flex;
+        grid-column: 2;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .input-container a{
+        display: flex;
+        align-self: center;
+    }
+    
+    .button-add{
+        border: none;
+    }
+    
+    .tasks-container, .tasks-container-complete, .contend{
+        height: 90vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        grid-row: 1;
+    }
+    
+    .task{
+        margin: 20px;
+        margin-top: 0;
+        background-color: white;
+        border-radius: 32px;
+        height: auto;
+        align-content: center;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        padding-left: 20px;
+        padding-right: 20px;
+        word-wrap: break-word;
+    }
+    
+    .task-time{
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    
+    .divtask .task:hover{
+        background-color: #7AC943;
+        color: #fff;
+        transition: 1200ms;
+    }
+    
+    .divtask .complete-task:hover{
+        background-color: #D93239;
+        color: #fff;
+        transition: 1200ms;
+    }
+
+    .contend{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .image-container{
+        text-align-last: center;
+    }
+    
+    .image-container img{
+        border-radius: 100%;
+        border: 4px solid #000;
+        margin: 30px;
+    }
+    
+    .paragraph-container{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .paragraph-container p{
+        text-align: justify;
+    }
+    
+    span{
+        font-weight: bolder;
+    }
+
+
+
+
+    
+}

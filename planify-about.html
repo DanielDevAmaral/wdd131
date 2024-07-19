@@ -17,36 +17,38 @@
     <script src="scripts/create-item.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/planify.css" />
+    <link rel="stylesheet" href="styles/planify-large.css" />
     <title>WDD 131 - Temples Album - Amaral, Daniel</title>
   </head>
   <body>
-    <main>
-      <div class="sidebar">
+    <main id="main-about">
+      <div class="sidebar close">
         <nav>
           <a href="planify.html">Create a Task</a>
           <a href="planify-complete.html">Complete Tasks</a>
-          <a class="choose" href="#">About me</a>
+          <a id="choose" href="#">About me</a>
         </nav>
       </div>
+      <button class="hamburger">☰</button>
       <div class="contend">
         <div class="image-container">
           <img src="./images//Daniel.webp" alt="me smiling" />
         </div>
         <div class="paragraph-container">
           <p>
-            <span>Daniel Amaral</span> Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum
+            Hello, <span>I'm Daniel Amaral</span>, the web developer behind Planify! I
+            created Planify to help you keep your tasks clean, simple, and
+            visible. I drew inspiration from Notion.io and other websites. I'm
+            currently living in Brazil but plan to move to Idaho to complete my
+            studies. I would love to hear your feedback on Planify. Please visit
+            this link and send me a message! <a href="https://www.linkedin.com/in/danielamaraldev/">My LinkedIn</a>.
           </p>
         </div>
       </div>
     </main>
+    <footer>
+      <p><span id="currentyear"></span> | Daniel Amaral | Brazil</p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>
